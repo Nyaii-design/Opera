@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JavaScript CRUD - Énekesek</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Web programozás-1 Előadás Házi feladat</h1></header>
+<nav><ul>
+<li><a href="index.html">Főoldal</a></li>
+<li><a href="javascript.html" class="active">JavaScript</a></li>
+<li><a href="react.html">React</a></li>
+<li><a href="spa.html">SPA</a></li>
+<li><a href="fetchapi.html">Fetch API</a></li>
+<li><a href="axios.html">Axios</a></li>
+<li><a href="oojs.html">OOJS</a></li>
+</ul></nav>
+<main>
+  <h2>JavaScript CRUD - Énekesek (tömb alapú)</h2>
+  <p style="color:var(--muted);margin-bottom:1rem">Az adatok egy JavaScript tömbben tárolódnak (frissítéskor visszaáll).</p>
+  <div class="card">
+    <form id="enekesForm">
+      <input type="hidden" id="enekesId">
+      <div class="form-row">
+        <input type="text" id="nev" placeholder="Név" required>
+        <input type="number" id="szulev" placeholder="Születési év" required min="1900" max="2025">
+      </div>
+      <div style="display:flex;gap:.5rem">
+        <button type="submit" id="submitBtn">Hozzáadás</button>
+        <button type="button" id="cancelBtn" class="secondary" style="display:none">Mégse</button>
+      </div>
+    </form>
+  </div>
+  <div class="card">
+    <table>
+      <thead><tr><th>ID</th><th>Név</th><th>Születési év</th><th>Műveletek</th></tr></thead>
+      <tbody id="enekesTable"></tbody>
+    </table>
+  </div>
+</main>
+<footer><p>Készítették: NÉV1 (NEPTUN1) és NÉV2 (NEPTUN2)</p></footer>
+<script src="js/javascript-app.js"></script>
+</body>
+</html>
