@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OOJS - Rajzoló</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Web programozás-1 Előadás Házi feladat</h1></header>
+<nav><ul>
+<li><a href="index.html">Főoldal</a></li>
+<li><a href="javascript.html">JavaScript</a></li>
+<li><a href="react.html">React</a></li>
+<li><a href="spa.html">SPA</a></li>
+<li><a href="fetchapi.html">Fetch API</a></li>
+<li><a href="axios.html">Axios</a></li>
+<li><a href="oojs.html" class="active">OOJS</a></li>
+</ul></nav>
+<main>
+  <h2>Objektumorientált JavaScript - Alakzat rajzoló</h2>
+  <div class="card">
+    <p style="margin-bottom:1rem;color:var(--muted)">Kattints a vászonra alakzat hozzáadásához. Az alkalmazás <code>class</code>, <code>constructor</code>, <code>extends</code>, <code>super</code>, metódusok és <code>document.body.appendChild</code> használatát mutatja be.</p>
+    <div class="form-row">
+      <select id="shapeType">
+        <option value="circle">Kör</option>
+        <option value="square">Négyzet</option>
+        <option value="triangle">Háromszög</option>
+      </select>
+      <input type="color" id="shapeColor" value="#6366f1">
+      <input type="number" id="shapeSize" value="40" min="10" max="100">
+      <button id="clearBtn" class="danger">Törlés</button>
+    </div>
+  </div>
+  <div id="canvasHolder" class="card"></div>
+</main>
+<footer><p>Készítették: NÉV1 (NEPTUN1) és NÉV2 (NEPTUN2)</p></footer>
+<script src="js/oojs-app.js"></script>
+</body>
+</html>
